@@ -7,8 +7,8 @@
       src="https://sandbox.web.squarecdn.com/v1/square.js"
     ></script>
     <script>
-      const appId = '{APPLICATION_ID}';
-      const locationId = '{LOCATION_ID}';
+      const appId = 'sandbox-sq0idb-NDtkPL3qZXe776F_x2-wmw';
+      const locationId = 'LWC10RR5MHVDM';
 
       async function initializeCard(payments) {
         const card = await payments.card();
@@ -19,8 +19,8 @@
 
       function buildPaymentRequest(payments) {
         const req = payments.paymentRequest({
-          countryCode: 'US',
-          currencyCode: 'USD',
+          countryCode: 'CA',
+          currencyCode: 'CAD',
           total: {
             amount: '1.00',
             label: 'Total',

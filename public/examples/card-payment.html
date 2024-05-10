@@ -2,13 +2,14 @@
 <html>
   <head>
     <link href="/app.css" rel="stylesheet" />
+    <link href="/dark-mode.css" rel="stylesheet" />
     <script
       type="text/javascript"
       src="https://sandbox.web.squarecdn.com/v1/square.js"
     ></script>
     <script>
-      const appId = '{APPLICATION_ID}';
-      const locationId = '{LOCATION_ID}';
+      const appId = 'sandbox-sq0idb-NDtkPL3qZXe776F_x2-wmw';
+      const locationId = 'LWC10RR5MHVDM';
 
       async function initializeCard(payments) {
         const card = await payments.card();
@@ -71,7 +72,7 @@
             state: 'LND',
             countryCode: 'GB',
           },
-          currencyCode: 'GBP',
+          currencyCode: 'CAD',
           intent: 'CHARGE',
         };
 
@@ -152,10 +153,10 @@
       });
     </script>
   </head>
-  <body>
+  <body class="dark-mode">
     <form id="payment-form">
       <div id="card-container"></div>
-      <button id="card-button" type="button">Pay $1.00</button>
+      <button id="card-button" type="button">Pay $42.00</button>
     </form>
     <div id="payment-status-container"></div>
   </body>
